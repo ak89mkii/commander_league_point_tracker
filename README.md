@@ -24,9 +24,6 @@ https://code-seonbi-v2.herokuapp.com/
 - PostgreSQL
 #### Packages:
 - webpack
-- file-loader
-- css-loader
-- https://www.npmjs.com/package/react-copy-to-clipboard
 #### Version Control:
 - Git
 - GitHub
@@ -57,6 +54,4 @@ https://code-seonbi-v2.herokuapp.com/
 #### Images References / Credits:
 #### Sounds References / Credits:
 #### Fonts / Credits:
-// https://fonts.google.com/specimen/Nanum+Brush+Script?query=brush&preview.text=Code%20Seonbi&preview.text_type=custom
-// https://fonts.google.com/specimen/Orbitron?preview.text_type=custom
 // 

@@ -38,6 +38,8 @@ https://code-seonbi-v2.herokuapp.com/
 // https://formulae.brew.sh/formula/postgresql
 // https://www.npmjs.com/package/file-loader
 // https://webpack.js.org/concepts/#loaders
+// https://www.npmjs.com/package/react-dom
+// https://react-bootstrap.github.io/getting-started/introduction/
 #### Deployment:
 // https://devcenter.heroku.com/articles/procfile
 // https://devcenter.heroku.com/articles/python-gunicorn
@@ -51,6 +53,9 @@ https://code-seonbi-v2.herokuapp.com/
 #### Information References:
 // https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt
 // https://medium.com/@kv.kaivalya/getting-started-with-postgresql-on-mac-osx-and-django-a55b1701dffa
+// https://stackoverflow.com/questions/55699874/after-installing-psycopg2-i-cannot-import-it-properly
+// https://stackoverflow.com/questions/63124161/attempted-import-error-switch-is-not-exported-from-react-router-dom
+// https://stackoverflow.com/questions/35171288/error-cannot-resolve-module-style-loader
 #### Images References / Credits:
 #### Sounds References / Credits:
 #### Fonts / Credits:

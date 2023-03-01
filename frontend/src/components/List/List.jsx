@@ -25,23 +25,7 @@ class List extends Component {
         points: 0,
         descriptionArr: ['goku', 'tifa'],
         incrementor: 1,
-        edit: <Reset />,    
-    }
-
-    toggleMode = () => {
-        if (this.state.mode == 'light') {
-            this.setState({
-                mode: 'dark',
-                mode2: 'darkNoText',
-                icon: moon,
-            })
-        } else if (this.state.mode == 'dark') {
-            this.setState({
-                mode: 'light',
-                mode2: 'lightNoText',
-                icon: sun,
-            })
-        }
+        check: 0,    
     }
 
     // Function: Sets state to data from backend Bug model.
@@ -57,17 +41,44 @@ class List extends Component {
             })
     }
 
-    // Function: Sends delete request to backend based on id.
-    deleteCommandList  = (id) => {
-        fetch('/backend/command-delete/' + id, {method: 'DELETE',})
-            .then(res => {
-                return res.json()
-            }) 
-            .then(window.location.reload())
+    // // Function: Sends delete request to backend based on id.
+    // deleteCommandList  = (id) => {
+    //     fetch('/backend/command-delete/' + id, {method: 'DELETE',})
+    //         .then(res => {
+    //             return res.json()
+    //         }) 
+    //         .then(window.location.reload())
+    // }
+
+    updateCard = () => {
+        this.setState({
+            descriptionArr: this.state.descriptionArr.concat(<h5>- End of Game {this.state.incrementor} -</h5>), 
+            incrementor: this.state.incrementor + 1})        
+        this.handleTrackerSubmit()
     }
+
+    // Save mode: light in local Storage:
+    handleTrackerSubmit = () => {
+        localStorage.setItem('check', 1);
+        localStorage.setItem('points', this.state.points);
+        localStorage.setItem('descriptionArr', 'photo');
+        localStorage.setItem('incrementor', 'photo');
+    };
 
     componentDidMount() {
         this.getAchievementList();
+        const check = localStorage.getItem('check');
+        this.setState({ check });
+        console.log({check})
+
+        if (check == 1) {
+        // console.log("halo")
+
+        const points = localStorage.getItem('points');
+        console.log(points)
+        this.setState({points: JSON.parse(points)});
+        console.log(points)
+        }
     }
 
     render() {
@@ -116,9 +127,7 @@ class List extends Component {
                 <Container className='center'>
                     <Button 
                         variant="primary" 
-                        onClick={() => this.setState({
-                            descriptionArr: this.state.descriptionArr.concat(<h5>- End of Game {this.state.incrementor} -</h5>), 
-                            incrementor: this.state.incrementor + 1})}>Save | Set Round
+                        onClick={this.updateCard}>Save | Set Round
                     </Button>
                 </Container>
                 <br></br>

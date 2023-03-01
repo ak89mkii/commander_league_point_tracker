@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { Container, Card, Col, Row, Button, Dropdown, Alert } from 'react-bootstrap';
 import '../../App.css';
-// import Nav from '../../components/Nav/Nav.jsx'
+import Reset from '../../components/Reset/Reset.jsx'
 // import Welcome from '../../components/Welcome/Welcome.jsx'
 // import CardsMain from '../../components/CardsMain/CardsMain.jsx'
 // import Footer from '../../components/Footer/Footer.jsx'
@@ -24,7 +24,8 @@ class List extends Component {
         showed: 'Copied',
         points: 0,
         descriptionArr: ['goku', 'tifa'],
-        incrementor: 1
+        incrementor: 1,
+        edit: <Reset />,    
     }
 
     toggleMode = () => {
@@ -105,15 +106,24 @@ class List extends Component {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        { this.state.descriptionArr.map((goku) => (
-                        <small className="text-muted"><p>{(goku)}</p></small>
+                        { this.state.descriptionArr.map((text) => (
+                        <small className="text-muted"><p>{(text)}</p></small>
                         ))}
                     </Card.Footer>
                     </Card>
                 </Container>
                 <br></br>
                 <Container className='center'>
-                    <Button variant="primary" onClick={() => this.setState({descriptionArr: this.state.descriptionArr.concat(<h5>- End of Game {this.state.incrementor} -</h5>), incrementor: this.state.incrementor + 1})}>Save | Set Round</Button>
+                    <Button 
+                        variant="primary" 
+                        onClick={() => this.setState({
+                            descriptionArr: this.state.descriptionArr.concat(<h5>- End of Game {this.state.incrementor} -</h5>), 
+                            incrementor: this.state.incrementor + 1})}>Save | Set Round
+                    </Button>
+                </Container>
+                <br></br>
+                <Container className='center'>
+                    <Reset />
                 </Container>
             </div>
         )

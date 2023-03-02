@@ -23,7 +23,7 @@ class List extends Component {
         show: 'Copy',
         showed: 'Copied',
         points: 0,
-        descriptionArr: ['goku', 'tifa'],
+        descriptionArr: [],
         incrementor: 1,
         check: 0,    
     }
@@ -50,34 +50,47 @@ class List extends Component {
     //         .then(window.location.reload())
     // }
 
-    updateCard = () => {
+    // Function: Save list to local storage:
+    resetCard= () => {
         this.setState({
-            descriptionArr: this.state.descriptionArr.concat(<h5>- End of Game {this.state.incrementor} -</h5>), 
-            incrementor: this.state.incrementor + 1})        
-        this.handleTrackerSubmit()
+            points: 0,
+            descriptionArr: [],
+            incrementor: 1,
+            check: 0,
+            show: false
+        })
     }
 
-    // Save mode: light in local Storage:
+    // Function: Update Card State
+    updateCard = () => {
+        this.setState({
+            descriptionArr: this.state.descriptionArr.concat('[ END OF GAME # ' + this.state.incrementor + ' ]'), 
+            incrementor: this.state.incrementor + 1});
+            console.log(this.state.descriptionArr)        
+        this.handleTrackerSubmit();
+    }
+
+    // Function: Save list to local storage:
     handleTrackerSubmit = () => {
         localStorage.setItem('check', 1);
         localStorage.setItem('points', this.state.points);
-        localStorage.setItem('descriptionArr', 'photo');
-        localStorage.setItem('incrementor', 'photo');
+        localStorage.setItem('descriptionArr', JSON.stringify(this.state.descriptionArr));
+        localStorage.setItem('incrementor', this.state.incrementor);
     };
 
+    // Function: Retrieve saved list from local storage:
     componentDidMount() {
         this.getAchievementList();
         const check = localStorage.getItem('check');
         this.setState({ check });
-        console.log({check})
 
         if (check == 1) {
-        // console.log("halo")
-
-        const points = localStorage.getItem('points');
-        console.log(points)
-        this.setState({points: JSON.parse(points)});
-        console.log(points)
+            const points = localStorage.getItem('points');
+            this.setState({points: JSON.parse(points)});
+            const descriptionArr = localStorage.getItem('descriptionArr');
+            this.setState({descriptionArr: JSON.parse(descriptionArr)});
+            const incrementor = localStorage.getItem('incrementor');
+            this.setState({incrementor: JSON.parse(incrementor)});
         }
     }
 
@@ -98,7 +111,7 @@ class List extends Component {
                             <p><b>Point(s):</b> {(list.point)}</p>
                         </Col>
                         <Col>
-                            <Button onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description)})}>Add</Button>
+                            <Button size="lg" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description)})}><h1>+</h1></Button>
                         </Col>
                     </Row>
                     </Card.Header>
@@ -126,14 +139,24 @@ class List extends Component {
                 <br></br>
                 <Container className='center'>
                     <Button 
-                        variant="primary" 
-                        onClick={this.updateCard}>Save | Set Round
+                        variant="dark" 
+                        onClick={this.updateCard}>End Round
                     </Button>
                 </Container>
                 <br></br>
                 <Container className='center'>
-                    <Reset />
+                    <Button 
+                        variant="primary" 
+                        onClick={this.handleTrackerSubmit}>Save List
+                    </Button>
                 </Container>
+                <br></br>
+                <Container className='center'>
+                    <Reset 
+                        resetCard={this.resetCard}
+                    />
+                </Container>
+                <br></br>
             </div>
         )
     }

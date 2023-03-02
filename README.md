@@ -56,6 +56,11 @@ https://code-seonbi-v2.herokuapp.com/
 // https://stackoverflow.com/questions/55699874/after-installing-psycopg2-i-cannot-import-it-properly
 // https://stackoverflow.com/questions/63124161/attempted-import-error-switch-is-not-exported-from-react-router-dom
 // https://stackoverflow.com/questions/35171288/error-cannot-resolve-module-style-loader
+// https://stackoverflow.com/questions/26069238/call-multiple-functions-onclick-reactjs
+// https://stackoverflow.com/questions/23728626/localstorage-and-json-stringify-json-parse
+// https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/
+// https://stackoverflow.com/questions/41052598/reactjs-array-push-function-not-working-in-setstate
+// https://stackoverflow.com/questions/39316376/how-to-use-the-increment-operator-in-react
 #### Images References / Credits:
 #### Sounds References / Credits:
 #### Fonts / Credits:

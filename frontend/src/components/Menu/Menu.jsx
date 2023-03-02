@@ -15,13 +15,11 @@ class Menu extends Component {
                     <Navbar.Brand>
                     <img
                         alt=""
-                        src='/Users/spock-117/code/projects/full-stack/commander_league_point_tracker/frontend/src/Img/01.png'
+                        src='https://drive.google.com/file/d/1yZDexhHf40cvdd5Rw4gKTpeghAbtai3W/view?usp=sharing'
                         width="100"
                         height="100"
                         className="d-inline-block align-top"
                     />
-                    </Navbar.Brand>
-                    <Navbar.Brand href="#home">
                     <img
                         alt=""
                         src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420"

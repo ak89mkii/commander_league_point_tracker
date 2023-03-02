@@ -14,7 +14,7 @@ class Menu extends Component {
                     <Navbar.Brand className='title'>ComCard</Navbar.Brand>
                     <Navbar.Brand>
                     <iframe src="https://drive.google.com/file/d/1yZDexhHf40cvdd5Rw4gKTpeghAbtai3W/preview" width="100" height="100" allow="autoplay"></iframe>
-                    <br></br>
+                    {/* <br></br> */}
                     <img
                         alt=""
                         src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420"

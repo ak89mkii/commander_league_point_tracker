@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { Navbar, Container, Col, Button } from 'react-bootstrap';
 import '../../App.css';
-import qR from '../../img/01.png';
 
 class Menu extends Component {
 
@@ -16,7 +15,7 @@ class Menu extends Component {
                     <Navbar.Brand>
                     <img
                         alt=""
-                        src={qR}
+                        src='/Users/spock-117/code/projects/full-stack/commander_league_point_tracker/frontend/src/Img/01.png'
                         width="100"
                         height="100"
                         className="d-inline-block align-top"

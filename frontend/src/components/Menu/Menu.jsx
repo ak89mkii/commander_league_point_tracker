@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { Navbar, Container, Col, Button } from 'react-bootstrap';
 import '../../App.css';
-import qR from '../../Img/1.png';
+import qR from '../../img/1.png';
 
 class Menu extends Component {
 

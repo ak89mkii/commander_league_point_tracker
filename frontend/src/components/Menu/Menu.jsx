@@ -13,13 +13,8 @@ class Menu extends Component {
                 <Container>
                     <Navbar.Brand className='title'>ComCard</Navbar.Brand>
                     <Navbar.Brand>
-                    <img
-                        alt=""
-                        src='https://drive.google.com/file/d/1yZDexhHf40cvdd5Rw4gKTpeghAbtai3W/view?usp=sharing'
-                        width="100"
-                        height="100"
-                        className="d-inline-block align-top"
-                    />
+                    <iframe src="https://drive.google.com/file/d/1yZDexhHf40cvdd5Rw4gKTpeghAbtai3W/preview" width="640" height="100" allow="autoplay"></iframe>
+                    <br></br>
                     <img
                         alt=""
                         src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420"

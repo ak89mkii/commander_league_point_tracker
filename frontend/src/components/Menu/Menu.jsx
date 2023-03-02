@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { Navbar, Container, Col, Button } from 'react-bootstrap';
 import '../../App.css';
+import qu from '../../Img/1.png';
 
 class Menu extends Component {
 
@@ -12,6 +13,15 @@ class Menu extends Component {
                 <Navbar bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand className='title'>ComCard</Navbar.Brand>
+                    <Navbar.Brand href="#home">
+                    <img
+                        alt=""
+                        src={qu}
+                        width="100"
+                        height="100"
+                        className="d-inline-block align-top"
+                    />{' '}
+                    </Navbar.Brand>
                     <Navbar.Brand href="#home">
                     <img
                         alt=""

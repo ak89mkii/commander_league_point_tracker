@@ -12,7 +12,7 @@ class Footer extends Component {
                 <Navbar bg="dark" variant="dark">
                 <Container>          
                     <Navbar.Text>
-                        <a href='http://127.0.0.1:8000/admin/'>
+                        <a href='https://commander-league-point-tracker.herokuapp.com/admin/login/?next=/admin/'>
                         <Button variant='secondary'>Admin Login</Button>  
                         </a>
                         <br></br>     

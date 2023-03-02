@@ -13,7 +13,7 @@ class Menu extends Component {
                 <Navbar bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand className='title'>ComCard</Navbar.Brand>
-                    <Navbar.Brand>
+                    {/* <Navbar.Brand> */}
                     <img
                         alt=""
                         src={qR}
@@ -21,7 +21,7 @@ class Menu extends Component {
                         height="100"
                         className="d-inline-block align-top"
                     />
-                    </Navbar.Brand>
+                    {/* </Navbar.Brand> */}
                     <Navbar.Brand href="#home">
                     <img
                         alt=""

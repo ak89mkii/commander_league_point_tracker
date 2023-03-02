@@ -20,7 +20,7 @@ class Menu extends Component {
                         width="100"
                         height="100"
                         className="d-inline-block align-top"
-                    />{' '}
+                    />
                     </Navbar.Brand>
                     <Navbar.Brand href="#home">
                     <img

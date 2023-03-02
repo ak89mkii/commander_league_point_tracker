@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { Container, Card, Col, Row, Button, Dropdown, Alert } from 'react-bootstrap';
 import '../../App.css';
 import Reset from '../../components/Reset/Reset.jsx'
-// import Welcome from '../../components/Welcome/Welcome.jsx'
+// import Footer from '../../components/Welcome/Welcome.jsx'
 // import CardsMain from '../../components/CardsMain/CardsMain.jsx'
-// import Footer from '../../components/Footer/Footer.jsx'
+import Footer from '../../components/Footer/Footer.jsx'
 // import sun from '../../Img/sun.png'
 // import moon from '../../Img/moon.png'
 
@@ -157,6 +157,9 @@ class List extends Component {
                     />
                 </Container>
                 <br></br>
+                {/* <Container> */}
+                    <Footer />
+                {/* </Container> */}
             </div>
         )
     }

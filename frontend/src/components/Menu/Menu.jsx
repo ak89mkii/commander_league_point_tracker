@@ -18,8 +18,8 @@ class Menu extends Component {
                     <img
                         alt=""
                         src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420"
-                        width="100"
-                        height="100"
+                        width="120"
+                        height="120"
                         className="d-inline-block align-top"
                     />{' '}
                     </Navbar.Brand>

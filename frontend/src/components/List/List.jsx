@@ -120,7 +120,7 @@ class List extends Component {
                             <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: true})}><h1>+</h1></Button>
                         </Col>
                         <Col>
-                            <Toast show={show} onClose={toggleShowA()}>
+                            <Toast show={this.state.show} onClose={toggleShowA()}>
                             <Toast.Header>
             <img
               src="holder.js/20x20?text=%20"

@@ -96,7 +96,7 @@ class List extends Component {
     }
 
     componentDidUpdate(){
-        setTimeout(() => this.setState({show: false}), 5000);
+        setInterval(() => this.setState({show: false}), 5000);
     }
 
     render() {

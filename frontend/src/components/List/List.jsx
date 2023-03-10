@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import { Container, Card, Col, Row, Button, Dropdown, Toast } from 'react-bootstrap';
+import { Container, Card, Col, Row, Button, Dropdown, Alert } from 'react-bootstrap';
 import '../../App.css';
 import Reset from '../../components/Reset/Reset.jsx'
 // import Footer from '../../components/Welcome/Welcome.jsx'

@@ -99,14 +99,15 @@ class List extends Component {
 
         return (
             <div>
+                
+                { this.state.newData.map((list) => (
+                <Container>
+                <Card>
                 <Container>
                     <Toast onClose={() => this.setState({show: false})} show={show} delay={1000} autohide>
                         <Toast.Body>Added!</Toast.Body>
                     </Toast>
                 </Container>
-                { this.state.newData.map((list) => (
-                <Container>
-                <Card>
                     <Card.Header>
                     <Row>
                         <Col>

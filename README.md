@@ -61,6 +61,7 @@ https://code-seonbi-v2.herokuapp.com/
 // https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/
 // https://stackoverflow.com/questions/41052598/reactjs-array-push-function-not-working-in-setstate
 // https://stackoverflow.com/questions/39316376/how-to-use-the-increment-operator-in-react
+// https://stackoverflow.com/questions/22081556/heroku-django-app-createsuperuser
 #### Images References / Credits:
 #### Sounds References / Credits:
 #### Fonts / Credits:

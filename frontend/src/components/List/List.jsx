@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import { Container, Card, Col, Row, Button, Dropdown, Alert } from 'react-bootstrap';
+import { Container, Card, Col, Row, Button, Dropdown, Toast } from 'react-bootstrap';
 import '../../App.css';
 import Reset from '../../components/Reset/Reset.jsx'
 // import Footer from '../../components/Welcome/Welcome.jsx'
@@ -25,7 +25,8 @@ class List extends Component {
         points: 0,
         descriptionArr: [],
         incrementor: 1,
-        check: 0,    
+        check: 0,
+        show: false,  
     }
 
     // Function: Sets state to data from backend Bug model.
@@ -98,6 +99,11 @@ class List extends Component {
 
         return (
             <div>
+                <Container>
+                    <Toast onClose={() => setState({show: this.state.false})} show={show} delay={1000} autohide>
+                        <Toast.Body>Added!</Toast.Body>
+                    </Toast>
+                </Container>
                 { this.state.newData.map((list) => (
                 <Container>
                 <Card>
@@ -105,13 +111,13 @@ class List extends Component {
                     <Row>
                         <Col>
                             <p><b>Achievement:</b> {(list.description)}</p>
-                            <p><b>Date:</b> {(list.date)}</p>
+                            {/* <p><b>Date:</b> {(list.date)}</p> */}
                         </Col>
                         <Col>
                             <p><b>Point(s):</b> {(list.point)}</p>
                         </Col>
                         <Col>
-                            <Button size="lg" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description)})}><h1>+</h1></Button>
+                            <Button size="lg" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: false})}><h1>+</h1></Button>
                         </Col>
                     </Row>
                     </Card.Header>

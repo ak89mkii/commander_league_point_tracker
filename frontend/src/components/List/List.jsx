@@ -26,7 +26,7 @@ class List extends Component {
         descriptionArr: [],
         incrementor: 1,
         check: 0,
-        show: false,  
+        show: true,  
     }
 
     // Function: Sets state to data from backend Bug model.

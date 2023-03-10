@@ -56,7 +56,8 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.addAlert {
+Alert.sticky {
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
 }

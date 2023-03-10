@@ -95,9 +95,9 @@ class List extends Component {
         }
     }
 
-    componentDidUpdate(){
-        setTimeout(() => this.setState({message:''}), 3000);
-    }
+    // componentDidUpdate(){
+    //     setTimeout(() => this.setState({message:''}), 3000);
+    // }
 
     toggleShowA = () => this.setState({show: false});
 

@@ -95,12 +95,8 @@ class List extends Component {
         }
     }
 
-    closeAlert = () => {
-        this.setState({show: false})
-    }
-
-    componentDidUpdate() {
-        setTimeout(this.closeAlert, 5000);
+    componentDidUpdate(){
+        setTimeout(() => this.setState({show: false}), 5000);
     }
 
     render() {

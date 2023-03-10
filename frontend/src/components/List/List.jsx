@@ -99,7 +99,7 @@ class List extends Component {
         setTimeout(() => this.setState({message:''}), 3000);
     }
 
-    toggleShowA = () => setShowA(!show);
+    toggleShowA = () => this.setState(!show);
 
     render() {
         return (

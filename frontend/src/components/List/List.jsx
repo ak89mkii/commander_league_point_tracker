@@ -99,8 +99,8 @@ class List extends Component {
         this.setState({show: false})
     }
 
-    componentDidUpdate(){
-        setTimeout(this.closeAlert(), 5000);
+    componentDidUpdate() {
+        setTimeout(this.closeAlert, 5000);
     }
 
     render() {

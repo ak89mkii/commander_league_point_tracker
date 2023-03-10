@@ -103,10 +103,7 @@ class List extends Component {
         return (
             <div>
                 {/* <Container> */}
-                    <h2 className='addAlert'>
-                    <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
-                        Added &quot;{this.state.descriptionArr[this.state.descriptionArr.length -1]}&quot; to list.
-                    </Alert></h2>
+                    
                 {/* </Container> */}
                 { this.state.newData.map((list) => (
                 <Container>
@@ -146,6 +143,11 @@ class List extends Component {
                         ))}
                     </Card.Footer>
                     </Card>
+                    <h2 className='addAlert'>
+                    <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
+                        Added &quot;{this.state.descriptionArr[this.state.descriptionArr.length -1]}&quot; to list.
+                    </Alert>
+                    </h2>
                 </Container>
                 <br></br>
                 <Container className='center'>

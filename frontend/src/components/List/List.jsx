@@ -105,9 +105,10 @@ class List extends Component {
         return (
             <div>
                 <Container>
+                    <h2>
                     <Alert className='addAlert' show={this.state.show} onClose={() => this.setState({show: false})}>
                         Test
-                    </Alert>
+                    </Alert></h2>
                 </Container>
                 { this.state.newData.map((list) => (
                 <Container>

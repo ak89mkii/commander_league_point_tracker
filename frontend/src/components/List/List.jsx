@@ -105,7 +105,7 @@ class List extends Component {
         return (
             <div>
                 <Container>
-                <Toast show={this.state.show} onClose={() => this.setState({show: false})}>
+                <Toast sticky="top" show={this.state.show} onClose={() => this.setState({show: false})}>
                                 <Toast.Header>
                                     <img
                                     src="holder.js/20x20?text=%20"

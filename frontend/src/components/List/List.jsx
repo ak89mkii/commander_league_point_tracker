@@ -117,7 +117,7 @@ class List extends Component {
                             <p><b>Point(s):</b> {(list.point)}</p>
                         </Col>
                         <Col>
-                            <Button size="lg" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: false})}><h1>+</h1></Button>
+                            <Button size="lg" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: true})}><h1>+</h1></Button>
                         </Col>
                     </Row>
                     </Card.Header>

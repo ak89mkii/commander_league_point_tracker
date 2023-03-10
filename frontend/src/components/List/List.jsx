@@ -105,8 +105,8 @@ class List extends Component {
         return (
             <div>
                 <Container>
-                    <h2>
-                    <Alert className='addAlert' show={this.state.show} onClose={() => this.setState({show: false})}>
+                    <h2 className='addAlert'>
+                    <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
                         Test
                     </Alert></h2>
                 </Container>

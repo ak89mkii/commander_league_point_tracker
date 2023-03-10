@@ -105,18 +105,9 @@ class List extends Component {
         return (
             <div>
                 <Container>
-                <Toast sticky="top" show={this.state.show} onClose={() => this.setState({show: false})}>
-                                <Toast.Header>
-                                    <img
-                                    src="holder.js/20x20?text=%20"
-                                    className="rounded me-2"
-                                    alt=""
-                                    />
-                                    <strong className="me-auto">Bootstrap</strong>
-                                    <small>11 mins ago</small>
-                                </Toast.Header>
-                                <Toast.Body>Woohoo, you're reading this text in a Toast!</Toast.Body>
-                            </Toast>
+                    <Alert className='addAlert' show={this.state.show} onClose={() => this.setState({show: false})}>
+                        Test
+                    </Alert>
                 </Container>
                 { this.state.newData.map((list) => (
                 <Container>

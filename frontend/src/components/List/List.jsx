@@ -104,7 +104,7 @@ class List extends Component {
                 <Container>
                 <Card>
                 <Container>
-                    <Toast onClose={() => this.setState({show: false})} show={show} delay={1000} autohide>
+                    <Toast delay={1000} autohide>
                         <Toast.Body>Added!</Toast.Body>
                     </Toast>
                 </Container>

@@ -99,15 +99,13 @@ class List extends Component {
     //     setTimeout(() => this.setState({message:''}), 3000);
     // }
 
-    toggleShowA(){ this.setState({show: false})};
-
     render() {
         return (
             <div>
                 {/* <Container> */}
                     <h2 className='addAlert'>
                     <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
-                        Added {this.state.descriptionArr[descriptionArr.length -1]}
+                        Added {this.state.descriptionArr[this.state.descriptionArr.length -1]}
                     </Alert></h2>
                 {/* </Container> */}
                 { this.state.newData.map((list) => (

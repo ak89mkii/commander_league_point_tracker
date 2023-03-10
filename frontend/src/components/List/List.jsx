@@ -95,9 +95,9 @@ class List extends Component {
         }
     }
 
-    // componentDidUpdate(){
-    //     setTimeout(() => this.setState({message:''}), 3000);
-    // }
+    componentDidUpdate(){
+        setTimeout(() => this.setState({show: false}), 3000);
+    }
 
     render() {
         return (
@@ -105,7 +105,7 @@ class List extends Component {
                 {/* <Container> */}
                     <h2 className='addAlert'>
                     <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
-                        Added {this.state.descriptionArr[this.state.descriptionArr.length -1]}
+                        Added &quot;{this.state.descriptionArr[this.state.descriptionArr.length -1]}&quot; to list.
                     </Alert></h2>
                 {/* </Container> */}
                 { this.state.newData.map((list) => (

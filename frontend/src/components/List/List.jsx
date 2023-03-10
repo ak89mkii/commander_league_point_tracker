@@ -104,6 +104,20 @@ class List extends Component {
     render() {
         return (
             <div>
+                <Container>
+                <Toast show={this.state.show} onClose={() => this.setState({show: false})}>
+                                <Toast.Header>
+                                    <img
+                                    src="holder.js/20x20?text=%20"
+                                    className="rounded me-2"
+                                    alt=""
+                                    />
+                                    <strong className="me-auto">Bootstrap</strong>
+                                    <small>11 mins ago</small>
+                                </Toast.Header>
+                                <Toast.Body>Woohoo, you're reading this text in a Toast!</Toast.Body>
+                            </Toast>
+                </Container>
                 { this.state.newData.map((list) => (
                 <Container>
                 <Card>
@@ -119,20 +133,7 @@ class List extends Component {
                         <Col>
                             <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: true})}><h1>+</h1></Button>
                         </Col>
-                        <Col>
-                            <Toast show={this.state.show} onClose={() => this.setState({show: false})}>
-                                <Toast.Header>
-                                    <img
-                                    src="holder.js/20x20?text=%20"
-                                    className="rounded me-2"
-                                    alt=""
-                                    />
-                                    <strong className="me-auto">Bootstrap</strong>
-                                    <small>11 mins ago</small>
-                                </Toast.Header>
-                                <Toast.Body>Woohoo, you're reading this text in a Toast!</Toast.Body>
-                            </Toast>
-                        </Col>
+                        
                     </Row>
                     </Card.Header>
                 </Card>

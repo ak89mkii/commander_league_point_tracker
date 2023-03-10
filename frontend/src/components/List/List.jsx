@@ -100,7 +100,7 @@ class List extends Component {
         return (
             <div>
                 <Container>
-                    <Toast onClose={() => setState({show: this.state.false})} show={show} delay={1000} autohide>
+                    <Toast onClose={() => this.setState({show: this.state.false})} show={show} delay={1000} autohide>
                         <Toast.Body>Added!</Toast.Body>
                     </Toast>
                 </Container>

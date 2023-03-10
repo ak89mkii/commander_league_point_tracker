@@ -96,18 +96,11 @@ class List extends Component {
     }
 
     render() {
-
         return (
             <div>
-                
                 { this.state.newData.map((list) => (
                 <Container>
                 <Card>
-                <Container>
-                    <Toast show={show} delay={1000} autohide>
-                        <Toast.Body>Added!</Toast.Body>
-                    </Toast>
-                </Container>
                     <Card.Header>
                     <Row>
                         <Col>
@@ -118,7 +111,10 @@ class List extends Component {
                             <p><b>Point(s):</b> {(list.point)}</p>
                         </Col>
                         <Col>
-                            <Button size="lg" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: true})}><h1>+</h1></Button>
+                        {this.state.show}
+                            <Button size="lg" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: <Toast>
+            <Toast.Body>Added!</Toast.Body>
+        </Toast> })}><h1>+</h1></Button>
                         </Col>
                     </Row>
                     </Card.Header>

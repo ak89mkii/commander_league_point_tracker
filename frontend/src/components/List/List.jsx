@@ -127,6 +127,13 @@ class List extends Component {
                 <br></br>
                 </Container>
                 ))}
+                <Container>
+                <h2 className='addAlert'>
+                    <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
+                        Added &quot;{this.state.descriptionArr[this.state.descriptionArr.length -1]}&quot; to list.
+                    </Alert>
+                </h2>
+                </Container>
                 <Container className='center'>
                 <Card style={{ width: '18rem', textAlign: 'center' }}>
                     <Card.Img variant="top" src="http://media.wizards.com/2016/images/daily/MM20161114_Wheel.png" />
@@ -143,11 +150,6 @@ class List extends Component {
                         ))}
                     </Card.Footer>
                     </Card>
-                    <h2 className='addAlert'>
-                    <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
-                        Added &quot;{this.state.descriptionArr[this.state.descriptionArr.length -1]}&quot; to list.
-                    </Alert>
-                    </h2>
                 </Container>
                 <br></br>
                 <Container className='center'>

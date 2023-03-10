@@ -104,7 +104,7 @@ class List extends Component {
                 <Container>
                 <Card>
                 <Container>
-                    <Toast delay={1000} autohide>
+                    <Toast show={show} delay={1000} autohide>
                         <Toast.Body>Added!</Toast.Body>
                     </Toast>
                 </Container>

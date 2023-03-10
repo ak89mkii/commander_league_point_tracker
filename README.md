@@ -62,6 +62,8 @@ https://code-seonbi-v2.herokuapp.com/
 // https://stackoverflow.com/questions/41052598/reactjs-array-push-function-not-working-in-setstate
 // https://stackoverflow.com/questions/39316376/how-to-use-the-increment-operator-in-react
 // https://stackoverflow.com/questions/22081556/heroku-django-app-createsuperuser
+// https://www.w3schools.com/css/css_positioning.asp
+// https://stackoverflow.com/questions/7867427/settimeout-runs-only-once
 #### Images References / Credits:
 #### Sounds References / Credits:
 #### Fonts / Credits:

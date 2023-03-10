@@ -60,8 +60,10 @@ h2.addAlert {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  right: 0;
   text-align: center;
   width: 100px;
+  z-index: -1;
 }
 
 .Alert {

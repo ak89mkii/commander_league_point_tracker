@@ -104,11 +104,12 @@ class List extends Component {
     render() {
         return (
             <div>
-            <Container>
+                {/* <Container> */}
                     <h2 className='addAlert'>
                     <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
                         Test
                     </Alert></h2>
+                {/* </Container> */}
                 { this.state.newData.map((list) => (
                 <Container>
                 <Card>
@@ -171,7 +172,7 @@ class List extends Component {
                 <br></br>
                 {/* <Container> */}
                     <Footer />
-            </Container>
+                {/* </Container> */}
             </div>
         )
     }

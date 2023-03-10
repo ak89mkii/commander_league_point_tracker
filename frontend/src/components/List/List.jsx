@@ -100,7 +100,7 @@ class List extends Component {
     }
 
     componentDidUpdate(){
-        setTimeout(closeAlert(), 5000);
+        setTimeout(this.closeAlert(), 5000);
     }
 
     render() {

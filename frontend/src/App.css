@@ -60,4 +60,5 @@ h2.addAlert {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  width: 20%;
 }

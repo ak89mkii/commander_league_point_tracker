@@ -96,7 +96,9 @@ class List extends Component {
     }
 
     componentDidUpdate(){
-        setTimeout(() => this.setState({show: false}), 5000);
+        if (this.state.show == true) {
+            setTimeout(() => this.setState({show: false}), 5000);
+        }
     }
 
     render() {

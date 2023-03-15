@@ -11,7 +11,15 @@ class Menu extends Component {
             <div>
                 <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand className='title'>ComCard</Navbar.Brand>
+                    <Navbar.Brand className='title'>
+                    <img
+                        alt=""
+                        src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420"
+                        width="120"
+                        height="120"
+                        className="d-inline-block align-top"
+                    />{' '}
+                    ComCard</Navbar.Brand>
                     <Navbar.Brand>
                     <iframe src="https://drive.google.com/file/d/1yZDexhHf40cvdd5Rw4gKTpeghAbtai3W/preview" width="70" height="70" allow="autoplay"></iframe>
                     {/* <br></br> */}

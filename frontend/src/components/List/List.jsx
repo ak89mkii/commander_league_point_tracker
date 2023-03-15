@@ -111,9 +111,11 @@ class List extends Component {
                     src={qr}
                     width="120"
                     height="120"
-                    className="d-inline-block align-top"
+                    className="qRCode"
                 />{' '}
                 </Container>
+                <br></br>
+                <br></br>
                 { this.state.newData.map((list) => (
                 <Container>
                 <Card>

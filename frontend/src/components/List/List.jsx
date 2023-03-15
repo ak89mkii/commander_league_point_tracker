@@ -138,7 +138,8 @@ class List extends Component {
                 </Container>
                 <Container className='center'>
                 <Card style={{ width: '18rem', textAlign: 'center' }}>
-                    <Card.Img variant="top" src="http://media.wizards.com/2016/images/daily/MM20161114_Wheel.png" />
+                    <Card.Img variant="top" src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420" />
+                    {/* <Card.Img variant="top" src="http://media.wizards.com/2016/images/daily/MM20161114_Wheel.png" /> */}
                     <Card.Body>
                         <Card.Title>Total Points Tracker</Card.Title>
                         <Dropdown.Divider />

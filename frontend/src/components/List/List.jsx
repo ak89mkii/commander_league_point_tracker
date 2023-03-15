@@ -6,7 +6,7 @@ import Reset from '../../components/Reset/Reset.jsx'
 // import Footer from '../../components/Welcome/Welcome.jsx'
 // import CardsMain from '../../components/CardsMain/CardsMain.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
-// import sun from '../../Img/sun.png'
+import qr from '../../Img/01.png'
 // import moon from '../../Img/moon.png'
 
 class List extends Component {
@@ -97,6 +97,7 @@ class List extends Component {
 
     componentDidUpdate(){
         if (this.state.show == true) {
+            clearTimeout();
             setTimeout(() => this.setState({show: false}), 5000);
         }
     }
@@ -104,9 +105,15 @@ class List extends Component {
     render() {
         return (
             <div>
-                {/* <Container> */}
-                    
-                {/* </Container> */}
+                <Container>
+                <img
+                    alt=""
+                    src={qr}
+                    width="120"
+                    height="120"
+                    className="d-inline-block align-top"
+                />{' '}
+                </Container>
                 { this.state.newData.map((list) => (
                 <Container>
                 <Card>

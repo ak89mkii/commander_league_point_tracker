@@ -21,15 +21,8 @@ class Menu extends Component {
                     />{' '}
                     ComCard</Navbar.Brand>
                     <Navbar.Brand>
-                    <iframe src="https://drive.google.com/file/d/1yZDexhHf40cvdd5Rw4gKTpeghAbtai3W/preview" width="70" height="70" allow="autoplay"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1yZDexhHf40cvdd5Rw4gKTpeghAbtai3W/preview" width="90" height="90" allow="autoplay"></iframe>
                     {/* <br></br> */}
-                    <img
-                        alt=""
-                        src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420"
-                        width="120"
-                        height="120"
-                        className="d-inline-block align-top"
-                    />{' '}
                     </Navbar.Brand>
                 </Container>
                 </Navbar>

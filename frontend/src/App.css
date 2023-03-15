@@ -38,7 +38,7 @@ html, body {
 
 .title {
   text-align: center;
-  font-size: 70px;
+  font-size: 100px;
   font-family: 'Nanum Brush Script', cursive;
 }
 
@@ -55,6 +55,8 @@ html, body {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
 }
+
+ /* Add Message  */
 
 h2.addAlert {
   position: -webkit-sticky; /* Safari */

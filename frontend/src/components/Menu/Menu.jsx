@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { Navbar, Container, Col, Button } from 'react-bootstrap';
 import '../../App.css';
-import logo from '../../Img/01.png';
+import logo from '../../Img/logo.png'
 
 class Menu extends Component {
 
@@ -13,12 +13,19 @@ class Menu extends Component {
                 <Navbar bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand className='title'>
-                    <img
+                    {/* <img
                         alt=""
-                        src={logo}
+                        src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420"
                         width="120"
                         height="120"
                         className="d-inline-block align-top"
+                    />{' '} */}
+                    <img
+                    alt=""
+                    src={logg}
+                    width="120"
+                    height="120"
+                    className="d-inline-block align-top"
                     />{' '}
                     ComCard</Navbar.Brand>
                     <Navbar.Brand>

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ak89mkii/commander_league_point_tracker/issues"
   },
-  "homepage": "https://github.com/ak89mkii/commander_league_point_tracker#readme"
+  "homepage": "https://github.com/ak89mkii/commander_league_point_tracker#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0"
+  }
 }

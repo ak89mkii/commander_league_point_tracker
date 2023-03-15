@@ -22,7 +22,7 @@ class Menu extends Component {
                     />{' '} */}
                     <img
                     alt=""
-                    src={logg}
+                    src={logo}
                     width="120"
                     height="120"
                     className="d-inline-block align-top"

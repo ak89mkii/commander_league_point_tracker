@@ -106,7 +106,6 @@ class List extends Component {
         return (
             <div>
                 <Container>
-                <Card>
                 <img
                     alt=""
                     src={qr}
@@ -114,7 +113,6 @@ class List extends Component {
                     height="120"
                     className="qRCode"
                 />{' '}
-                </Card>
                 </Container>
                 <br></br>
                 <br></br>

@@ -84,5 +84,6 @@ h2.addAlert {
   border-radius: 20px;
   border-color: black;
   margin-left: 10px;
-  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
 }

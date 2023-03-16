@@ -27,7 +27,6 @@ class List extends Component {
         incrementor: 1,
         check: 0,
         show: false,  
-        timer: null
     }
 
     // Function: Sets state to data from backend Bug model.
@@ -98,9 +97,8 @@ class List extends Component {
 
     componentDidUpdate() {
         if (this.state.show == true) {
-            clearTimeout(this.state.timer);
-            this.setState({timer: setTimeout(() => this.setState({show: false}), 5000)})
-            // return () => clearTimeout(timer);
+            clearTimeout(this.timer);
+            this.timer = setTimeout(() => this.setState({show: false}), 5000)
         }
     }
 

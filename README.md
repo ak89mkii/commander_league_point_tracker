@@ -8,9 +8,9 @@
 https://code-seonbi-v2.herokuapp.com/
 
 ## Screenshots:
-![Screenshot](/01.png)
+<!-- ![Screenshot](/01.png) -->
 ![Screenshot](/02.png)
-![Screenshot](/03.png)
+<!-- ![Screenshot](/03.png) -->
 
 ## Technologies Used:
 #### Front-End:

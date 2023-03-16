@@ -29,6 +29,8 @@ class List extends Component {
         show: false,  
     }
 
+    timer = null;
+
     // Function: Sets state to data from backend Bug model.
     // Need arrow function to use setState.
     getAchievementList = () => {
@@ -95,10 +97,10 @@ class List extends Component {
         }
     }
 
-    componentDidUpdate() {
+    componentDidUpdate(timer) {
         if (this.state.show == true) {
-            // clearTimeout(timer);
-            const timer = setTimeout(() => this.setState({show: false}), 5000);
+            clearTimeout(timer);
+            timer = setTimeout(() => this.setState({show: false}), 5000);
             // return () => clearTimeout(timer);
         }
     }

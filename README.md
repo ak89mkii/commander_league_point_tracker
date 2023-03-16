@@ -64,7 +64,9 @@ https://commander-league-point-tracker.herokuapp.com/
 // https://stackoverflow.com/questions/22081556/heroku-django-app-createsuperuser
 // https://www.w3schools.com/css/css_positioning.asp
 // https://stackoverflow.com/questions/7867427/settimeout-runs-only-once
+// https://stackoverflow.com/questions/49085450/settimeout-and-cleartimeout-in-reactjs
+// https://stackoverflow.com/questions/55849635/how-to-change-the-primary-color-of-the-react-built-in-bootstrap
 #### Images References / Credits:
 #### Sounds References / Credits:
 #### Fonts / Credits:
-// 
+// https://fonts.google.com/specimen/Nanum+Brush+Script?query=brush

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Card, Col, Row, Button, Dropdown, Alert } from 'react-bootstrap';
 import '../../App.css';
 import Reset from '../../components/Reset/Reset.jsx'
-// import Footer from '../../components/Welcome/Welcome.jsx'
+import Save from '../../components/Save/Save.jsx'
 // import CardsMain from '../../components/CardsMain/CardsMain.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import qr from '../../Img/01.png'
@@ -105,13 +105,11 @@ class List extends Component {
     render() {
         return (
             <div> 
-                {/* <Container> */}
-            <h2 className='addAlert'>
-                <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
-                    Added &quot;{this.state.descriptionArr[this.state.descriptionArr.length -1]}&quot; to list.
-                </Alert>
-            </h2>
-             {/* </Container> */}
+                <h2 className='addAlert'>
+                    <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
+                        Added &quot;{this.state.descriptionArr[this.state.descriptionArr.length -1]}&quot; to list.
+                    </Alert>
+                </h2>
                 <Container className='center'>
                 <img
                     alt=""
@@ -145,13 +143,6 @@ class List extends Component {
                 <br></br>
                 </Container>
                 ))}
-                <Container>
-                <h2 className='addAlert'>
-                    <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
-                        Added &quot;{this.state.descriptionArr[this.state.descriptionArr.length -1]}&quot; to list.
-                    </Alert>
-                </h2>
-                </Container>
                 <Container className='center'>
                 <Card style={{ width: '18rem', textAlign: 'center' }}>
                     <Card.Img variant="top" src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420" />
@@ -179,10 +170,9 @@ class List extends Component {
                 </Container>
                 <br></br>
                 <Container className='center'>
-                    <Button 
-                        variant="primary" 
-                        onClick={this.handleTrackerSubmit}>Save List
-                    </Button>
+                    <Save
+                        handleTrackerSubmit={this.handleTrackerSubmit}
+                    />
                 </Container>
                 <br></br>
                 <Container className='center'>

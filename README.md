@@ -5,11 +5,11 @@
 (Full-Stack, Django, PostgreSQL, React.js) | Magic the Gathering (MTG) Commander league match achievements list and points tracker.
 
 ## Deployment Link:
-https://code-seonbi-v2.herokuapp.com/
+https://commander-league-point-tracker.herokuapp.com/
 
 ## Screenshots:
 <!-- ![Screenshot](/01.png) -->
-![Screenshot](/02.png)
+![Screenshot](2.png)
 <!-- ![Screenshot](/03.png) -->
 
 ## Technologies Used:

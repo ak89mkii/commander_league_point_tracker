@@ -27,9 +27,8 @@ class List extends Component {
         incrementor: 1,
         check: 0,
         show: false,  
+        timer: null
     }
-
-    timer = null;
 
     // Function: Sets state to data from backend Bug model.
     // Need arrow function to use setState.
@@ -54,7 +53,7 @@ class List extends Component {
     // }
 
     // Function: Save list to local storage:
-    resetCard= () => {
+    resetCard = () => {
         this.setState({
             points: 0,
             descriptionArr: [],
@@ -97,10 +96,10 @@ class List extends Component {
         }
     }
 
-    componentDidUpdate(timer) {
+    componentDidUpdate() {
         if (this.state.show == true) {
-            clearTimeout(timer);
-            timer = setTimeout(() => this.setState({show: false}), 5000);
+            clearTimeout(this.state.timer);
+            this.setState({timer: setTimeout(() => this.setState({show: false}), 5000)})
             // return () => clearTimeout(timer);
         }
     }

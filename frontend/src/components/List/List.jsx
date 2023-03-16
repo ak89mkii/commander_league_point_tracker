@@ -97,8 +97,8 @@ class List extends Component {
 
     componentDidUpdate(){
         if (this.state.show == true) {
-            // clearTimeout(this.timer)
-            timer = () => setTimeout(() => this.setState({show: false}), 5000);
+            clearTimeout()
+            setTimeout(() => this.setState({show: false}), 5000);
         }
     }
 

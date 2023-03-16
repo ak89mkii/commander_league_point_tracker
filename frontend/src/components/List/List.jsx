@@ -105,7 +105,7 @@ class List extends Component {
     render() {
         return (
             <div>
-                <Container>
+                <Container className='center'>
                 <img
                     alt=""
                     src={qr}

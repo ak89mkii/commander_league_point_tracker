@@ -100,6 +100,7 @@ class List extends Component {
         clearTimeout(timerId)
         if (this.state.show == true) {
             timerId = setTimeout(() => this.setState({show: false}), 5000);
+            return () => clearTimeout(timerId);
         }
     }
 

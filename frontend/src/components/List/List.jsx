@@ -104,13 +104,14 @@ class List extends Component {
 
     render() {
         return (
-            <div> <Container>
+            <div> 
+                {/* <Container> */}
             <h2 className='addAlert'>
                 <Alert show={this.state.show} onClose={() => this.setState({show: false})}>
                     Added &quot;{this.state.descriptionArr[this.state.descriptionArr.length -1]}&quot; to list.
                 </Alert>
             </h2>
-            </Container>
+             {/* </Container> */}
                 <Container className='center'>
                 <img
                     alt=""

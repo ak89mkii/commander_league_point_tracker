@@ -65,7 +65,7 @@ class List extends Component {
     // Function: Update Card State
     updateCard = () => {
         this.setState({
-            descriptionArr: this.state.descriptionArr.concat('[ END OF GAME # ' + this.state.incrementor + ' ]'), 
+            descriptionArr: this.state.descriptionArr.concat('[ END OF GAME # ' + this.state.incrementor + ' - ' + this.state.points + ' ]'), 
             incrementor: this.state.incrementor + 1});
             console.log(this.state.descriptionArr)        
         this.handleTrackerSubmit();
@@ -133,7 +133,7 @@ class List extends Component {
                     </Row>
                     <Row>
                         <Col>
-                            <p><h1>{(list.point)} point(s)</h1></p>
+                            <p><h4>{(list.point)} point(s)</h4></p>
                         </Col>
                     </Row>
                     <Row>
@@ -153,7 +153,7 @@ class List extends Component {
                     <Card.Img variant="top" src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_93287_e.png?v=1592295420" />
                     {/* <Card.Img variant="top" src="http://media.wizards.com/2016/images/daily/MM20161114_Wheel.png" /> */}
                     <Card.Body>
-                        <Card.Title>Total Points Tracker</Card.Title>
+                        <Card.Title>League Match Points Tracker</Card.Title>
                         <Dropdown.Divider />
                         <Card.Text>
                             <h1>{this.state.points}</h1>

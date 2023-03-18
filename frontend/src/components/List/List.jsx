@@ -65,7 +65,7 @@ class List extends Component {
     // Function: Update Card State
     updateCard = () => {
         this.setState({
-            descriptionArr: this.state.descriptionArr.concat('[ END OF GAME # ' + this.state.incrementor + ' - ' + this.state.points + ' MATCH POINT(S) ]'), 
+            descriptionArr: this.state.descriptionArr.concat('[ END OF GAME # ' + this.state.incrementor + ' - ' + <b>this.state.points</b> + ' match point(s) ]'), 
             incrementor: this.state.incrementor + 1});
             console.log(this.state.descriptionArr)        
         this.handleTrackerSubmit();

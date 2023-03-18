@@ -133,8 +133,10 @@ class List extends Component {
                     </Row>
                     <Row>
                         <Col>
-                            <p><h1>{(list.point)} Points</h1></p>
+                            <p><h1>{(list.point)} point(s)</h1></p>
                         </Col>
+                    </Row>
+                    <Row>
                         <Col>
                             <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: true})}><h1>+</h1></Button>
                         </Col>

@@ -65,6 +65,7 @@ class List extends Component {
     // Function: Update Card State
     updateCard = () => {
         this.setState({
+            show: false,
             descriptionArr: this.state.descriptionArr.concat('[ END OF GAME # ' + this.state.incrementor + ' | ' + this.state.points + ' earned achievement point(s) ]'), 
             incrementor: this.state.incrementor + 1});
             console.log(this.state.descriptionArr)        

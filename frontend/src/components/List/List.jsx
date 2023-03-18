@@ -124,6 +124,7 @@ class List extends Component {
                 </Container>
                 <br></br>
                 <br></br>
+                <h1>Standard Achievements</h1>
                 { this.state.newData.filter(list => list.vote === false).map((list) => (
                 <Container>
                 <Card>
@@ -151,6 +152,8 @@ class List extends Component {
                 <br></br>
                 </Container>
                 ))}
+                <br></br>
+                <br></br>
                 <Container>
                 <h1>Voting Achievements</h1>
                 </Container>

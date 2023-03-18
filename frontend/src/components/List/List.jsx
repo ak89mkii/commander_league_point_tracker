@@ -130,13 +130,14 @@ class List extends Component {
                             <p><b>Achievement:</b> {(list.description)}</p>
                             {/* <p><b>Date:</b> {(list.date)}</p> */}
                         </Col>
+                    </Row>
+                    <Row>
                         <Col>
-                            <p><b>Point(s):</b> {(list.point)}</p>
+                            <p><h1>{(list.point)} Points</h1></p>
                         </Col>
                         <Col>
                             <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: true})}><h1>+</h1></Button>
                         </Col>
-                        
                     </Row>
                     </Card.Header>
                 </Card>

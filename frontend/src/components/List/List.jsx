@@ -67,8 +67,10 @@ class List extends Component {
         this.setState({
             show: false,
             descriptionArr: this.state.descriptionArr.concat('[ END OF GAME # ' + this.state.incrementor + ' | ' + this.state.points + ' earned achievement point(s) ]'), 
-            incrementor: this.state.incrementor + 1});
-            console.log(this.state.descriptionArr)        
+            incrementor: this.state.incrementor + 1,
+            points: 0,
+        });
+            // console.log(this.state.descriptionArr)        
         this.handleTrackerSubmit();
     }
 

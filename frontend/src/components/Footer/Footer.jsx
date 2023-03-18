@@ -17,7 +17,7 @@ class Footer extends Component {
                         </a>
                         <br></br>     
                         <br></br>
-                        <p className='footer'>© 2023, ComCard | Ponder Code | Ponder Enterprises LLC </p>   
+                        <p className='footer'>© 2023, ComCard | Ponder Code | Ponder Enterprises LLC</p>   
                     </Navbar.Text>
                 </Container>
                 </Navbar>

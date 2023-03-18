@@ -5,7 +5,7 @@ from django.db import models
 class Achievement(models.Model):
     date = models.DateField(auto_now_add=True)
     description = models.CharField(max_length=1000)
-    point = models.IntegerField(max_length=10)
+    point = models.IntegerField()
     vote = models.BooleanField(default=False)
     # user = models.ForeignKey(User, on_delete=models.CASCADE)
 

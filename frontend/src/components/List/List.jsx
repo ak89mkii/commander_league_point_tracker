@@ -124,9 +124,39 @@ class List extends Component {
                 </Container>
                 <br></br>
                 <br></br>
-                { this.state.newData.map((list) => (
+                { this.state.newData.filter(list => list.vote = false).map((list) => (
                 <Container>
                 <Card>
+                    <Card.Header>
+                    <Row>
+                        <Col>
+                            <p><b>Achievement:</b> {(list.description)}</p>
+                            {/* <p><b>Date:</b> {(list.date)}</p> */}
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <p><h4>{(list.point)} point(s)</h4></p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col> 
+                        <div className="d-grid gap-2">
+                            <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: true})}><h1>+</h1></Button>
+                        </div>
+                        </Col>
+                    </Row>
+                    </Card.Header>
+                </Card>
+                <br></br>
+                </Container>
+                ))}
+                <Container>
+                <h1>Voting Achievements</h1>
+                </Container>
+                { this.state.newData.filter(list => list.vote = true).map((list) => (
+                <Container>
+                <Card bg='Info'>
                     <Card.Header>
                     <Row>
                         <Col>

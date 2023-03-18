@@ -156,7 +156,7 @@ class List extends Component {
                 </Container>
                 { this.state.newData.filter(list => list.vote === true).map((list) => (
                 <Container>
-                <Card bg='Info'>
+                <Card bg='info'>
                     <Card.Header>
                     <Row>
                         <Col>

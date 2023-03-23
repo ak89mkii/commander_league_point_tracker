@@ -51,7 +51,7 @@ class List extends Component {
     //         .then(window.location.reload())
     // }
 
-    // Function: Save list to local storage:
+    // Function: Resets the state of the page to the default configuration.
     resetCard = () => {
         this.setState({
             points: 0,
@@ -62,11 +62,11 @@ class List extends Component {
         })
     }
 
-    // Function: Update Card State
+    // Function: Update Card State.
     updateCard = () => {
         this.setState({
             show: false,
-            descriptionArr: this.state.descriptionArr.concat('[ END OF GAME # ' + this.state.incrementor + ' | ' + this.state.points + ' earned achievement point(s) ]'), 
+            descriptionArr: this.state.descriptionArr.concat('[ END OF GAME # ' + this.state.incrementor + ' | Earned ' + this.state.points + ' achievement point(s) ]'), 
             incrementor: this.state.incrementor + 1,
             points: 0,
         });
@@ -74,7 +74,7 @@ class List extends Component {
         this.handleTrackerSubmit();
     }
 
-    // Function: Save list to local storage:
+    // Function: Save list to local storage.
     handleTrackerSubmit = () => {
         localStorage.setItem('check', 1);
         localStorage.setItem('points', this.state.points);
@@ -82,7 +82,7 @@ class List extends Component {
         localStorage.setItem('incrementor', this.state.incrementor);
     };
 
-    // Function: Retrieve saved list from local storage:
+    // Function: Retrieve saved list from local storage.
     componentDidMount() {
         this.getAchievementList();
         const check = localStorage.getItem('check');
@@ -98,6 +98,7 @@ class List extends Component {
         }
     }
 
+    // Function: Clears then sets a timer for "add to list" message.
     componentDidUpdate() {
         if (this.state.show == true) {
             clearTimeout(this.timer);
@@ -178,7 +179,7 @@ class List extends Component {
                     <Row>
                         <Col> 
                         <div className="d-grid gap-2">
-                            <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: true})}><h1>+</h1></Button>
+                            <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description + ' - '  + list.point), show: true})}><h1>+</h1></Button>
                         </div>
                         </Col>
                     </Row>

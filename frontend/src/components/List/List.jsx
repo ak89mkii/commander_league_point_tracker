@@ -147,7 +147,7 @@ class List extends Component {
                     <Row>
                         <Col> 
                         <div className="d-grid gap-2">
-                            <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description), show: true})}><h1>+</h1></Button>
+                            <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description + ' [ '  + list.point + ' pt(s) ] '), show: true})}><h1>+</h1></Button>
                         </div>
                         </Col>
                     </Row>
@@ -179,7 +179,7 @@ class List extends Component {
                     <Row>
                         <Col> 
                         <div className="d-grid gap-2">
-                            <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description + ' [ '  + list.point + ' ] '), show: true})}><h1>+</h1></Button>
+                            <Button size="md" variant="success" onClick={() => this.setState({points: this.state.points + list.point, descriptionArr: this.state.descriptionArr.concat(list.description + ' [ '  + list.point + ' pt(s) ] '), show: true})}><h1>+</h1></Button>
                         </div>
                         </Col>
                     </Row>

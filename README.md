@@ -12,6 +12,22 @@ https://commander-league-point-tracker.herokuapp.com/
 ![Screenshot](2.png)
 <!-- ![Screenshot](/03.png) -->
 
+## ComCard User Docs:
+#### User Interface:
+
+- QR Code: The QR code contains the web address of the Comcard website (https://commander-league-point-tracker.herokuapp.com/).
+- Standard Achievements: Contains the ways to score that do not change each commander league session. Data renders from the connected database’s “Achievement” model.
+- Achievement: Explains way to score.
+“point(s)”: Contains amount of points earned through completing achievement.
+- Button: Adds description and points to the “League Match Points Tracker” card below. 
+Voting Achievements: Contains the ways to score that do change each commander league session and are determined by match groups’ vote.
+- League Match Points Tracker: The “League Match Points Tracker” card lists and tracks the description and score of added achievements.
+#### Buttons:
+- End Round: Adds an “END OF GAME”, game number, and total earned points for the game label in the list section of the tracker.
+Save List: Saves the current statute of the “League Match Points Tracker” (will retain data after page refresh).
+- Reset Tracker: Resets the state of the “League Match Points Tracker” the default blank state.
+- Admin Login: Links to the Django administration login page.
+
 ## Technologies Used:
 #### Front-End:
 - HTML

@@ -64,8 +64,11 @@ Save List: Saves the current statute of the “League Match Points Tracker” (w
 // https://pypi.org/project/django-heroku
 // https://devcenter.heroku.com/articles/django-app-configuration
 // https://medium.com/@qazi/how-to-deploy-a-django-app-to-heroku-in-2018-the-easy-way-48a528d97f9c
-#### Deployment Troubleshooting:
-// 
+#### Devlopment and Troubleshooting:
+// https://replit.com/@AK89MKII/TestMTGAPI#script.js
+// https://discord.com/developers/applications/1092540765965668353/information
+// https://scryfall.com/docs/syntax
+// https://scryfall.com/docs/api/cards/search
 #### Information References:
 // https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt
 // https://medium.com/@kv.kaivalya/getting-started-with-postgresql-on-mac-osx-and-django-a55b1701dffa
